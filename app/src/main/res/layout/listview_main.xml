@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:padding="10dp">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button" />
+
+    <LinearLayout
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/thumbnail_height"
+        android:orientation="vertical">
+        //대피소 이미지
+
+        <ImageView
+            android:id="@+id/shelterImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:scaleType="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/shelter_01" />
+        //대피소명
+
+        <TextView
+            android:id="@+id/shelterNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        //대피소 위치
+
+        <TextView
+            android:id="@+id/shelterLocationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="13dp" />
+        //대피소 정보제공자명
+
+        <TextView
+            android:id="@+id/shelterProviderView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="10dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:background="@mipmap/ic_launcher"
+            android:text="+"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</LinearLayout>
